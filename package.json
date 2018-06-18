@@ -1,11 +1,11 @@
 {
-  "name": "testpilot-containers",
-  "title": "Multi-Account Containers",
-  "description": "Containers helps you keep all the parts of your online life contained in different tabs. Custom labels and color-coded tabs help keep different activities — like online shopping, travel planning, or checking work email — separate.",
+  "name": "hermetic-social",
+  "title": "Hermetic Social",
+  "description": "Hermetic Social is an opinionated Containers addon for Firefox."
   "version": "6.0.0",
-  "author": "Andrea Marchesini, Luke Crouch and Jonathan Kingston",
+  "author": "hoosteeno, building on great work by Multi-Account Containers authors",
   "bugs": {
-    "url": "https://github.com/mozilla/multi-account-containers/issues"
+    "url": "https://github.com/hoosteeno/hermetic-social/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -27,12 +27,12 @@
     "stylelint-order": "^0.3.0",
     "web-ext": "^2.2.2"
   },
-  "homepage": "https://github.com/mozilla/multi-account-containers#readme",
+  "homepage": "https://github.com/hoosteeno/hermetic-social#readme",
   "license": "MPL-2.0",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mozilla/multi-account-containers.git"
+    "url": "git+https://github.com/hoosteeno/hermetic-social.git"
   },
   "scripts": {
     "build": "npm test && cd src && web-ext build --overwrite-dest",
@@ -42,7 +42,7 @@
     "lint:css": "stylelint src/css/*.css",
     "lint:html": "htmllint *.html",
     "lint:js": "eslint .",
-    "package": "rm -rf src/web-ext-artifacts && npm run build && mv src/web-ext-artifacts/firefox_multi-account_containers-*.zip addon.xpi",
+    "package": "rm -rf src/web-ext-artifacts && npm run build && mv src/web-ext-artifacts/firefox_hermetic-social-*.zip addon.xpi",
     "test": "npm run lint && mocha ./test/setup.js test/**/*.test.js",
     "test-watch": "mocha ./test/setup.js test/**/*.test.js --watch"
   }

@@ -81,7 +81,7 @@ module.exports = () => {
       }
     },
     extension: {
-      getURL: sinon.stub().returns("moz-extension://multi-account-containers/confirm-page.html")
+      getURL: sinon.stub().returns("moz-extension://hermetic-social/confirm-page.html")
     }
   };
 

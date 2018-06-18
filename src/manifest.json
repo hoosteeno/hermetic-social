@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Firefox Multi-Account Containers",
-  "version": "6.0.0",
+  "name": "Hermetic Social",
+  "version": "1.0.0",
 
-  "description": "Multi-Account Containers helps you keep all the parts of your online life contained in different tabs. Custom labels and color-coded tabs help keep different activities — like online shopping, travel planning, or checking work email — separate.",
+  "description": "An opinionated Containers addon for Firefox",
   "icons": {
     "48": "img/container-site-d-48.png",
     "96": "img/container-site-d-96.png"
@@ -11,12 +11,12 @@
 
   "applications": {
     "gecko": {
-      "id": "@testpilot-containers",
+      "id": "@hermetic-containers",
       "strict_min_version": "57.0"
     }
   },
 
-  "homepage_url": "https://github.com/mozilla/multi-account-containers#readme",
+  "homepage_url": "https://github.com/hoosteeno/hermetic-social/#readme",
 
   "permissions": [
     "<all_urls>",
@@ -46,7 +46,7 @@
   "browser_action": {
     "browser_style": true,
     "default_icon": "img/container-site.svg",
-    "default_title": "Multi-Account Containers",
+    "default_title": "Hermetic Social",
     "default_popup": "popup.html"
   },
 

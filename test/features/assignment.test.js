@@ -31,7 +31,7 @@ describe("Assignment Feature", () => {
       it("should open the confirm page", async () => {
         // should have created a new tab with the confirm page
         background.browser.tabs.create.should.have.been.calledWith({
-          url: "moz-extension://multi-account-containers/confirm-page.html?" +
+          url: "moz-extension://hermetic-social/confirm-page.html?" +
                `url=${encodeURIComponent(activeTab.url)}` +
                `&cookieStoreId=${activeTab.cookieStoreId}`,
           cookieStoreId: undefined,
